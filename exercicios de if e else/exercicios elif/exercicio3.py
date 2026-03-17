@@ -7,6 +7,7 @@ Escreva um algoritmo que leia o preço do livro e mostre o valor do desconto ofe
 '''
 
 preco_livro = float(input("Informe o preço do livro comprado: "))
+
 if preco_livro > 0:
     if preco_livro <= 10:
         desconto = preco_livro * 0.08
@@ -14,6 +15,7 @@ if preco_livro > 0:
         desconto = preco_livro * 0.10
     else:
         desconto = preco_livro * 0.20
+
     print(f"O desconto do livro foi de R$ {round(desconto, 2)}.")
 else:
     print("Valor não identificado.")
