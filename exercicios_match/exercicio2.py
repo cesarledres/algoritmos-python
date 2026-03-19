@@ -11,8 +11,8 @@ print("1) Adicione 5 ao número inserido.")
 print("2) Subtraia 4 ao número inserido.")
 print("3) Dobre o valor inserido.")
 
-numero = float(input("Digite um número: "))
 opcao = int(input("Digite o número da sua opção: "))
+numero = float(input("Digite um número: "))
 
 match opcao:
     case 1:
