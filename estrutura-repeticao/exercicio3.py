@@ -1,0 +1,10 @@
+'''
+Escreva um programa que calcule a soma de todos os números pares entre 1 e 20.
+'''
+
+soma = 0
+
+for cont in range(1, 21):
+    soma = soma + cont
+
+print(f"A soma dos números de 1 a 20 é {soma}.")
