@@ -33,7 +33,6 @@ for cont in range(5):
     
 media = soma / 5
 
-print(f"O menor sálario é de {menor_salario} e pertence a {menor_nome}")
-print(f"O maior sálario é de {maior_salario} e pertence a {maior_nome}")
-#adicionar print media
-# arredondar todos os valoes do print
+print(f"O menor sálario é de R$ {round(menor_salario, 2)} e pertence a {menor_nome}")
+print(f"O maior sálario é de R$ {round(maior_salario, 2)} e pertence a {maior_nome}")
+print(f"A média de todos os salários é de R$ {round(media, 2)}")
