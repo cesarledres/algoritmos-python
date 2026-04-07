@@ -7,7 +7,7 @@ o	A média salarial dos funcionários da empresa XXX é _______
 o	O nome e o salário do funcionário que recebe o menor salário
 o	O nome e o salário do funcionário que recebe o maior salário
 '''
-
+nome_empresa = input("Informe o nome da empresa: ")
 soma = 0
 
 for cont in range(5):
@@ -33,6 +33,6 @@ for cont in range(5):
     
 media = soma / 5
 
+print(f"A média salarial dos funcionários da empresa {nome_empresa} é R$ {round(media, 2)}")
 print(f"O menor sálario é de R$ {round(menor_salario, 2)} e pertence a {menor_nome}")
 print(f"O maior sálario é de R$ {round(maior_salario, 2)} e pertence a {maior_nome}")
-print(f"A média de todos os salários é de R$ {round(media, 2)}")
