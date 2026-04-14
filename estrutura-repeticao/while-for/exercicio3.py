@@ -4,5 +4,8 @@
 num1 = int(input("Digite o primeiro número inteiro: "))
 num2 = int(input("Digite o segundo número inteiro: "))
 
-for cont in range(num1-1, num2):
+cont = num1 + 1
+
+while cont < num2:
     print(cont)
+    cont += 1
