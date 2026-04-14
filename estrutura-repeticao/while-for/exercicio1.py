@@ -6,12 +6,16 @@ soma = 0
 cont = 0
 
 while resp == 1:
-    num = float(input("digite um numero (0 para sair): "))
-    if num == 0:
-        resp = 0
+    num = float(input("Digite um numero (0 para sair): "))
+    if num < 0:
+        print("Digite números positivos.")
+       
     else:
-        soma += num
-        cont += 1
+        if num == 0:
+            resp = 0
+        else:
+            soma += num
+            cont += 1
 
 media = soma / cont
 
