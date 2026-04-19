@@ -4,17 +4,16 @@ S = 1/1 + 2/3 + 3/5 + 4/7 + 5/9 + ... + n/m.
 Nesse caso, utilize a estrutura de repetição “for”.
 '''
 
-numerador = 0
-denominador = -1
-serie = 0
+numerador = 1
+denominador = 1
 
 n = int(input("Digite um número inteiro: "))
 
 for i in range(n):
+    serie += numerador / denominador
+    if i < n-1:
+        print(f"{numerador}/{denominador} + ", end="")
+    else:
+        print(f"{numerador}/{denominador}")
     numerador += 1
     denominador += 2
-    print()
-
-# pulei
-
-
