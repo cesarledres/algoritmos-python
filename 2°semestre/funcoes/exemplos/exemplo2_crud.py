@@ -40,7 +40,7 @@ def main():
                     exibir_clientes_acima_10k(lista_clientes)
         else:
             print("Opção inválida")
-            
+
 # Funções do CRUD
 def inserir_cliente(lista_clientes):
     codigo_cliente = int(input("Digite o código do cliente: "))
@@ -98,3 +98,6 @@ def exibir_clientes_acima_10k(lista_clientes):
             for chave, valor in lista_clientes[i].items():
                 print(f"{chave}:{valor}")
         print("------------------------")
+
+if __name__ == "__main__":
+    main()
