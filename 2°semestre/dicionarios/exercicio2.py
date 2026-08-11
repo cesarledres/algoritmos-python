@@ -13,7 +13,7 @@ Em seguida, exiba todos os produtos da loja.
 
 lista_produto = []
 
-for i in range(3):
+for i in range(2):
     codigo = int(input("Digite o código do produto: "))
     nome = input("Digite o nome do produto: ")
     categoria = input("Digite a categoria do produto: ")
@@ -32,5 +32,7 @@ for i in range(3):
 
     lista_produto.append(dados_produto)
 
-for i in lista_produto:
-    print(i)
+for i in range(len(lista_produto)):
+    for chave, valor in lista_produto[i].items():
+        print(f"{chave}:{valor}")
+    print("---------------------------")

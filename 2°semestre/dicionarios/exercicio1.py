@@ -12,7 +12,7 @@ Em seguida, exiba todos os alunos da academia.
 
 lista_alunos = []
 
-for i in range(3):
+for i in range(2):
     matricula = int(input("Digite a matricula: "))
     nome = input("Digite o nome: ")
     plano = input("Digite o plano: ")
@@ -29,5 +29,7 @@ for i in range(3):
 
     lista_alunos.append(dados_alunos)
 
-for i in lista_alunos:
-    print(lista_alunos)
+for i in range(len(lista_alunos)):
+    for chave, valor in lista_alunos[i].items():
+        print(f"{chave}:{valor}")
+    print("----------------")
