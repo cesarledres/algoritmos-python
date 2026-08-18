@@ -9,7 +9,7 @@ def somaImposto(taxa_imposto, custo_item):
     return (taxa_imposto + 1) * custo_item
 
 taxa_imposto = int(input("Digite em porcentagem a taxa de imposto: "))
-taxa_imposto = taxa_imposto / 100
+taxa_imposto /= 100
 custo_item = float(input("Digite o custo do item: "))
 
 custo_com_imposto = somaImposto(taxa_imposto, custo_item)
