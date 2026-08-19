@@ -25,6 +25,8 @@ def main():
         print("3 - Excluir cliente")
         print("4 - Exibir cliente")
         print("5 - Sair")
+        
+        opcao = int(input("Digite a opção desejada: "))
 
 def buscar_cliente(lista_clientes, matricula):
     indice = -1
@@ -40,3 +42,24 @@ def inserir_cliente(lista_clientes):
         while indice != -1:
             matricula = int(input("Está matriácula já existe, digite outra: "))
             buscar_cliente(lista_clientes, matricula)
+        
+        nome = input("Digite o nome do cliente: ")
+        plano = input("Digite o plano do cliente: ")
+        modalidade = input("Digite a modalidade do cliente: ")
+        presenca = int(input("Digite a quantidade de presenças no mês: "))
+    except ValueError:
+        print("Digite dados númericos para os campos de matricula e prenseça.")
+    else:
+        dados_cliente = {
+            'Matricula': matricula,
+            'Nome': nome,
+            'Plano': plano,
+            'Modalidade': modalidade,
+            'Presenca': presenca
+        }
+
+        lista_clientes.append(dados_cliente)
+        print("Cliente cadastrado com sucesso!")
+
+def alterar_cliente(lista_clientes, indice):
+    
